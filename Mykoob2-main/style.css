@@ -5,12 +5,13 @@ body{
 
 .container{
     background-image: url(rvtpered.png);
+    background-position: center; 
     background-repeat:no-repeat;
     background-size: cover;
 }
 .header-line{
     margin: 0px 10px;
-    height: 650px;
+    height: 500px;
 }
 
 .header-line{
@@ -111,16 +112,11 @@ body{
   transform-origin: bottom left;
 }
 
-.textbox{
-    width: 850px;
-    height: 500px;
-    padding-left: 500px;
-}
 
 .JN{/*тут границы для слайдера, где он и как*/
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 475px;
     display: flex;
     justify-content: center;
 }
@@ -233,17 +229,98 @@ body{
     background: #000;
 }
 
+.contact{
+    height: 1550px;
+    background-image: url(RVTbig2.png);
+    background-position: center; 
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
 
+.aboutUs-title {
+    font-family:"Raleway","sans-serif";
+    position: absolute;
+    color: #fff;
+    top: 1130px;
+    left: 375px;    
+}
 
+.Info{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1200px;
+    left: 375px;
+}
 
+.Info2{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1235px;
+    left: 380px;
+}
 
+.map_Valdemars{
+    height: 55%;
+    width: 45%;
+    position: absolute;
+    top: 1300px;
+    left: 375px;
+}
 
+.Info3{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1720px;
+    left: 370px;
+}
 
+.Info4{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1755px;
+    left: 375px;
+}
 
+.map_Darzs{
+    height: 50%;
+    width: 45%;
+    position: absolute;
+    top: 1825px;
+    left: 375px;
+}
 
+.Contact-title{
+    font-family:"Raleway","sans-serif";
+    position: absolute;
+    color: #fff;
+    top: 2220px;
+    left: 375px;
+}
 
+.Kontakt{
+    font-family:"Raleway","sans-serif";
+    position: absolute;
+    color: #fff;
+    top: 2260px;
+    left: 375px;
+    font-size: 20px;
+}
 
-
+.end{
+    height: 45px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 8px;
+}
 
 
 
