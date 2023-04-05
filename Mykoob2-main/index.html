@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset ="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    
+    <title>Mykoob3</title>
+</head>
+
+<body>
+    <div class = 'header animate__animated animate__fadeInDown'>
+        <div class = 'container'>
+            <div class = 'header-line'>
+                <div class = 'header - logo'>
+                    <img class = 'logo-img' src = "logo3.png"alt="">
+                </div>
+                    <div class = 'RV'>Rīgas Valsts</div>
+                    <div class = 'teh'>tehnikums</div>
+                <div class = 'nav'>
+                    <a class = 'nav-item' href="@">Galvenā</a>
+                    <a class = 'nav-item' href="@">Stundu saraksts</a>
+                    <a class = 'nav-item' href="@">Atzīmes</a>
+                    <a class = 'nav-item' href="@">Sarakste</a>
+                    <a class = 'nav-item' href="@">Log In</a>
+                </div>
+
+                <div class = 'phone'>
+                    <div class = 'number'><a class = 'num' href = '#'>+371 67 324 146</a></div>
+                    <div class = 'phone-text'>Sazināties ar mums</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class = 'JN'>
+<!--Start of sldier-->
+        <div class="slider">
+            <!--Start of radio buttons-->
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+            <!--End of radio buttons-->                
+            <!--Slide images start-->
+                <div class="slide first">
+                    <img src="1.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="2.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="3.png" alt="">
+                </div>
+                
+                <div class="slide">
+                    <img src="4.png" alt="">
+                </div>
+            <!--Slide images End-->
+            <!--Automatic scroll start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            <!--Automatic scroll end-->
+            </div>
+            <!--manual nav start-->
+            <div class="manual-navigation">
+                <label for="radio1" class ="manual-btn"></label>
+                <label for="radio2" class ="manual-btn"></label>
+                <label for="radio3" class ="manual-btn"></label>
+                <label for="radio4" class ="manual-btn"></label>
+            </div>
+            <!--manual nav end-->
+        </div>   
+        <script type="text/javascript">
+        var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+    </div>   
+<!--End of slider-->
+</body>
+</html>
