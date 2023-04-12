@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    background-image: url(rvtpered.png);
+    background-position: center; 
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.header-line{
+    margin: 0px 10px;
+    height: 500px;
+}
+
+.header-line{
+    padding-top: 40px;
+    padding-left: 140px;
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    color: #000;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.nav-item:hover{
+    color: #fffeff;
+    transition: color 0.35s linear;
+}
+
+.phone{
+    border-left: 2px solid #000;
+    padding-left: 10px;
+    height: 50px;
+}
+
+.logo-img{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+
+.num{
+    color: #000;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+
+.phone-text{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.phone{
+    display flex;
+    align-items: top;
+}
+
+.RV{
+    position: absolute;
+    top: 31px;
+    left: 125px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 30px;
+}
+
+.teh{
+    position: absolute;
+    top: 31px;
+    left: 302px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  color: #000000;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.JN{/*тут границы для слайдера, где он и как*/
+    margin: 0;
+    padding: 0;
+    height: 475px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider{/*тут размеры слайдера*/
+    width: 800px;
+    height: 400px;
+    overflow:hidden;
+    border-radius: 10px;
+}
+
+.slides{/*тут размеры картинок как я понял*/
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{/*тут лишнее убиаем чтоб не мешало*/
+    display: none;
+}
+
+.slide{/*тут хз, скорее всего анимация перехода*/
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img{/*тут размеры картинок*/
+    width: 800px;
+    height: 400px;
+}
+
+/*css for manual slide nav*/
+
+.manual-navigation{ /*это расположение кнопочек переключателя*/
+    position: absolute;
+    width: 800px;
+    margin-top: -125px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{/*это сами кнопочки, их десигн, но снизу есть еще одни такие же, про них там напишу*/
+    border:2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){/*хз че это, просто не трогай*/
+    margin-right: 25px;
+}
+
+.manual-btn:hover{/*делает плавную анимку окрашивания*/
+    background: #fff;
+    border:2px solid #fff;
+}
+
+/*перелистывание фоток, если кто умный можете поковырять*/
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*css for auto nav*/
+
+.navigation-auto{/*те же самые кнопки о которых говорил,
+    но они для авто перемотки, тут их позиция*/
+    position: absolute;
+    display:flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 375px;
+}
+
+
+.navigation-auto div{/*а это уже их стиль заливка жидкая подливка*/
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.navigation-auto div:not(:last-child){/*хз че это, просто не трогай*/
+    margin-right: 25px;
+}
+
+/*это чтобы на какой картинке слайд, такой кружочек окращен*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #000;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #000;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #000;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #000;
+}
+
+
+/*Страница с расписанием*/
+.contact{
+    height: 1550px;
+    background-image: url(RVTbig2.png);
+    background-position: center; 
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.aboutUs-title {
+    font-family:"Raleway","sans-serif";
+    position: absolute;
+    color: #fff;
+    top: 1130px;
+    left: 375px;    
+}
+
+.Info{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1200px;
+    left: 375px;
+}
+
+.Info2{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1235px;
+    left: 380px;
+}
+
+.map_Valdemars{
+    height: 350px;
+    width: 660px;
+    position: absolute;
+    top: 1300px;
+    left: 375px;
+}
+
+.Info3{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1700px;
+    left: 370px;
+}
+
+.Info4{
+    position: absolute;
+    font-weight: 300;
+    font-size: 23px;
+    color: #fff;
+    top: 1735px;
+    left: 375px;
+}
+
+.map_Darzs{
+    height: 350px;
+    width: 660px;
+    position: absolute;
+    top: 1795px;
+    left: 375px;
+}
+
+.Contact-title{
+    font-family:"Raleway","sans-serif";
+    position: absolute;
+    color: #fff;
+    top: 2180px;
+    left: 375px;
+}
+
+.Kontakt{
+    font-family:"Raleway","sans-serif";
+    position: absolute;
+    color: #fff;
+    top: 2200px;
+    left: 375px;
+    font-size: 20px;
+}
+
+.saraksts{
+    height: 800px;
+}
+
+.Saraksts_img{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.Saraksts_Darzs_img{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.aizvietosana_img{
+    position: absolute;
+    top: 1750px;
+    left: 390px;
+    height:40%;
+    width:50%%;
+}
+
+.text_aiz{
+    position: absolute;
+    top: 1680px;
+    left:380px;
+}
+
+.end{
+    height: 45px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 8px;
+}
+
+.Atzimes_cont{
+    height: 83  0px;
+    text-align: center;
+}
+
+.nauda{
+    position: absolute;
+    top: 700px;
+    left: 40px;
+    width: 290px;
+    height:600px;
+}
+
+.nauda2{
+    position: absolute;
+    top: 700px;
+    right: 40px;
+    width: 290px;
+    height:600px;
+}
